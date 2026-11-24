@@ -1,0 +1,18 @@
+[project]
+name = "measure-the-size-of-an-object"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.6",
+    "opencv-contrib-python>=5.1.0.95",
+    "ultralytics>=8.4.216",
+]
+
+[project.scripts]
+measure-the-size-of-an-object = "measure_the_size_of_an_object:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
